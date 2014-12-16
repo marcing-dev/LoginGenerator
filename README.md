@@ -2,128 +2,128 @@ LoginGenerator
 ==============
 
 Java app for generating usernames from gathered data. Currently it works (or should work) in interactive mode.
-Belowe some usage example:
-
->java -jar LoginGenerator.jar
-usage: LoginGenerator.jar
- -d,--dataline-contain <string>   only lines conatining that string will be used
-
- -h,--help                        print this message
- -i,--interactive                 interactive mode can be used with inputfile
- -in,--input-file <file>          input file
- -out,--output-file <file>        output file. Default stdout
- -q,--quiet-mode                  prints only result and errors when not interactive
- -r,--remove-char <string>        remove that chars from data lines (space separated)
- -t,--data-type <string>          determine data type in lines, separated with space. Each line can
-                                  have data like: NAME, SURNAME, NICKNAME, EMAIL.
-                                  f.e. line "James Bond 007@mi6.uk" got "NAME SURNAME EMAIL".
-                                  Default: name surname email
-
->java -jar LoginGenerator.jar -i
-[+] filename to process:data.txt
-[+] got file:data.txt. Is that right? ([Y]/n)
-[+] want me to print it? (y/[N]) y
-
-Development:
-Samuel Pickwick - pickwick@herot.net
-Nathaniel Winkle - winkle@herot.net
-Augustus Snodgrass - snodgrass@herot.net
-Tracy Tupman - tupman@herot.net
-Sam Weller - weller@herot.net
-Tony Weller - tweller@herot.net
-Estella Havisham - havisham@herot.net
-Abel Magwitch - magwitch@herot.net
-Philip Pirrip - pirrip@herot.net
-
-
-Testing:
-Nicholas Nickleby - nickleby@herot.net
-Ralph Nickleby - rnickleby@herot.net
-Newman Noggs - noggs@herot.net
-Wackford Squeers - squeers@herot.net
-Thomas Pinch - pinch@herot.net
-Mark Tapley - tapley@herot.net
-Sarah Gamp - gamp@herot.net
-
-
-Marketing:
-Jacob Marley - marley@herot.net
-Ebenezer Scrooge - scrooge@herot.net
-Bob Cratchit - cratchit@herot.net
-
-
-Human Resources:
-Bill Sikes - sikes@herot.net
-Jack Dawkins - dawkins@herot.net
-Noah Claypole - claypole@herot.net
-
-[+] does every (non empty) line contain data? ([Y]/n) n
-[+] do data lines have something in common? ([Y]/n)
-[+] and that is: @
-[+] print provided lines? ([Y]/n)
-
-Samuel Pickwick - pickwick@herot.net
-Nathaniel Winkle - winkle@herot.net
-Augustus Snodgrass - snodgrass@herot.net
-Tracy Tupman - tupman@herot.net
-Sam Weller - weller@herot.net
-Tony Weller - tweller@herot.net
-Estella Havisham - havisham@herot.net
-Abel Magwitch - magwitch@herot.net
-Philip Pirrip - pirrip@herot.net
-Nicholas Nickleby - nickleby@herot.net
-Ralph Nickleby - rnickleby@herot.net
-Newman Noggs - noggs@herot.net
-Wackford Squeers - squeers@herot.net
-Thomas Pinch - pinch@herot.net
-Mark Tapley - tapley@herot.net
-Sarah Gamp - gamp@herot.net
-Jacob Marley - marley@herot.net
-Ebenezer Scrooge - scrooge@herot.net
-Bob Cratchit - cratchit@herot.net
-Bill Sikes - sikes@herot.net
-Jack Dawkins - dawkins@herot.net
-Noah Claypole - claypole@herot.net
-
-[+] can we move on to the next steps? ([Y]/n)
-[+] only data (and spaces) must be present in lines
-[+] do you want delete some chars? (y/[N]) y
-[+] print provided lines? ([Y]/n) n
-[+] what can be deleted? -
-[+] what type instead that? (empty input will delete it)
-[+] print provided lines? ([Y]/n)
-
-Samuel Pickwick  pickwick@herot.net
-Nathaniel Winkle  winkle@herot.net
-Augustus Snodgrass  snodgrass@herot.net
-Tracy Tupman  tupman@herot.net
-Sam Weller  weller@herot.net
-Tony Weller  tweller@herot.net
-Estella Havisham  havisham@herot.net
-Abel Magwitch  magwitch@herot.net
-Philip Pirrip  pirrip@herot.net
-Nicholas Nickleby  nickleby@herot.net
-Ralph Nickleby  rnickleby@herot.net
-Newman Noggs  noggs@herot.net
-Wackford Squeers  squeers@herot.net
-Thomas Pinch  pinch@herot.net
-Mark Tapley  tapley@herot.net
-Sarah Gamp  gamp@herot.net
-Jacob Marley  marley@herot.net
-Ebenezer Scrooge  scrooge@herot.net
-Bob Cratchit  cratchit@herot.net
-Bill Sikes  sikes@herot.net
-Jack Dawkins  dawkins@herot.net
-Noah Claypole  claypole@herot.net
-
-[+] do you want delete some chars? (y/[N])
-[+] each line can have data like: NAME, SURNAME, NICKNAME, EMAIL
-[+] f.e. line "James Bond 007@mi6.uk" got "NAME SURNAME EMAIL"
-[+] does every line contain the same type of data? ([Y]/n) Y
-[+] looking on example above, what types of data we have (space between)? name surname email
-[+] parsing data...
-[+] successfully generated 486 unique usernames
-[+] provide filename for output (none for stdout): out.txt
-[+] usernames saved to file: out.txt
-[+] done! Bye!
-
+Belowe some usage example:<br/>
+<br/>
+java -jar LoginGenerator.jar<br/>
+usage: LoginGenerator.jar<br/>
+ -d,--dataline-contain <string>   only lines conatining that string will be used<br/>
+ -h,--help                        print this message<br/>
+ -i,--interactive                 interactive mode can be used with inputfile<br/>
+ -in,--input-file <file>          input file<br/>
+ -out,--output-file <file>        output file. Default stdout<br/>
+ -q,--quiet-mode                  prints only result and errors when not interactive<br/>
+ -r,--remove-char <string>        remove that chars from data lines (space separated)<br/>
+ -t,--data-type <string>          determine data type in lines, separated with space. Each line can<br/>
+                                  have data like: NAME, SURNAME, NICKNAME, EMAIL.<br/>
+                                  f.e. line "James Bond 007@mi6.uk" got "NAME SURNAME EMAIL".<br/>
+                                  Default: name surname email<br/>
+<br/>
+#java -jar LoginGenerator.jar -i<br/>
+[+] filename to process:data.txt<br/>
+[+] got file:data.txt. Is that right? ([Y]/n)<br/>
+[+] want me to print it? (y/[N]) y<br/>
+<br/>
+Development:<br/>
+Samuel Pickwick - pickwick@herot.net<br/>
+Nathaniel Winkle - winkle@herot.net<br/>
+Augustus Snodgrass - snodgrass@herot.net<br/>
+Tracy Tupman - tupman@herot.net<br/>
+Sam Weller - weller@herot.net<br/>
+Tony Weller - tweller@herot.net<br/>
+Estella Havisham - havisham@herot.net<br/>
+Abel Magwitch - magwitch@herot.net<br/>
+Philip Pirrip - pirrip@herot.net<br/>
+<br/>
+<br/>
+Testing:<br/>
+Nicholas Nickleby - nickleby@herot.net<br/>
+Ralph Nickleby - rnickleby@herot.net<br/>
+Newman Noggs - noggs@herot.net<br/>
+Wackford Squeers - squeers@herot.net<br/>
+Thomas Pinch - pinch@herot.net<br/>
+Mark Tapley - tapley@herot.net<br/>
+Sarah Gamp - gamp@herot.net<br/>
+<br/>
+<br/>
+Marketing:<br/>
+Jacob Marley - marley@herot.net<br/>
+Ebenezer Scrooge - scrooge@herot.net<br/>
+Bob Cratchit - cratchit@herot.net<br/>
+<br/>
+<br/>
+Human Resources:<br/>
+Bill Sikes - sikes@herot.net<br/>
+Jack Dawkins - dawkins@herot.net<br/>
+Noah Claypole - claypole@herot.net<br/>
+<br/>
+[+] does every (non empty) line contain data? ([Y]/n) n<br/>
+[+] do data lines have something in common? ([Y]/n)<br/>
+[+] and that is: @<br/>
+[+] print provided lines? ([Y]/n)<br/>
+<br/>
+Samuel Pickwick - pickwick@herot.net<br/>
+Nathaniel Winkle - winkle@herot.net<br/>
+Augustus Snodgrass - snodgrass@herot.net<br/>
+Tracy Tupman - tupman@herot.net<br/>
+Sam Weller - weller@herot.net<br/>
+Tony Weller - tweller@herot.net<br/>
+Estella Havisham - havisham@herot.net<br/>
+Abel Magwitch - magwitch@herot.net<br/>
+Philip Pirrip - pirrip@herot.net<br/>
+Nicholas Nickleby - nickleby@herot.net<br/>
+Ralph Nickleby - rnickleby@herot.net<br/>
+Newman Noggs - noggs@herot.net<br/>
+Wackford Squeers - squeers@herot.net<br/>
+Thomas Pinch - pinch@herot.net<br/>
+Mark Tapley - tapley@herot.net<br/>
+Sarah Gamp - gamp@herot.net<br/>
+Jacob Marley - marley@herot.net<br/>
+Ebenezer Scrooge - scrooge@herot.net<br/>
+Bob Cratchit - cratchit@herot.net<br/>
+Bill Sikes - sikes@herot.net<br/>
+Jack Dawkins - dawkins@herot.net<br/>
+Noah Claypole - claypole@herot.net<br/>
+<br/>
+[+] can we move on to the next steps? ([Y]/n)<br/>
+[+] only data (and spaces) must be present in lines<br/>
+[+] do you want delete some chars? (y/[N]) y<br/>
+[+] print provided lines? ([Y]/n) n<br/>
+[+] what can be deleted? -<br/>
+[+] what type instead that? (empty input will delete it)<br/>
+[+] print provided lines? ([Y]/n)<br/>
+<br/>
+Samuel Pickwick  pickwick@herot.net<br/>
+Nathaniel Winkle  winkle@herot.net<br/>
+Augustus Snodgrass  snodgrass@herot.net<br/>
+Tracy Tupman  tupman@herot.net<br/>
+Sam Weller  weller@herot.net<br/>
+Tony Weller  tweller@herot.net<br/>
+Estella Havisham  havisham@herot.net<br/>
+Abel Magwitch  magwitch@herot.net<br/>
+Philip Pirrip  pirrip@herot.net<br/>
+Nicholas Nickleby  nickleby@herot.net<br/>
+Ralph Nickleby  rnickleby@herot.net<br/>
+Newman Noggs  noggs@herot.net<br/>
+Wackford Squeers  squeers@herot.net<br/>
+Thomas Pinch  pinch@herot.net<br/>
+Mark Tapley  tapley@herot.net<br/>
+Sarah Gamp  gamp@herot.net<br/>
+Jacob Marley  marley@herot.net<br/>
+Ebenezer Scrooge  scrooge@herot.net<br/>
+Bob Cratchit  cratchit@herot.net<br/>
+Bill Sikes  sikes@herot.net<br/>
+Jack Dawkins  dawkins@herot.net<br/>
+Noah Claypole  claypole@herot.net<br/>
+<br/>
+[+] do you want delete some chars? (y/[N])<br/>
+[+] each line can have data like: NAME, SURNAME, NICKNAME, EMAIL<br/>
+[+] f.e. line "James Bond 007@mi6.uk" got "NAME SURNAME EMAIL"<br/>
+[+] does every line contain the same type of data? ([Y]/n) Y<br/>
+[+] looking on example above, what types of data we have (space between)? name surname email<br/>
+[+] parsing data...<br/>
+[+] successfully generated 486 unique usernames<br/>
+[+] provide filename for output (none for stdout): out.txt<br/>
+[+] usernames saved to file: out.txt<br/>
+[+] done! Bye!<br/>
+<br/>
+<br/>
