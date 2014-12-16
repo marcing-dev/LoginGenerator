@@ -6,7 +6,7 @@ Below some usage example:<br/>
 <br/>
 <b>java -jar LoginGenerator.jar</b><br/>
 usage: LoginGenerator.jar<br/>
- -d,--dataline-contain <string>   only lines conatining that string will be used<br/>
+ -d,--dataline-contain <string>		only lines conatining that string will be used<br/>
  -h,--help                        print this message<br/>
  -i,--interactive                 interactive mode can be used with inputfile<br/>
  -in,--input-file <file>          input file<br/>
