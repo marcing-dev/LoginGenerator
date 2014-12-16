@@ -4,7 +4,7 @@ LoginGenerator
 Java app for generating usernames from gathered data. Currently it works (or should work) in interactive mode.
 Below some usage example:<br/>
 <br/>
-java -jar LoginGenerator.jar<br/>
+<b>java -jar LoginGenerator.jar</b><br/>
 usage: LoginGenerator.jar<br/>
  -d,--dataline-contain <string>   only lines conatining that string will be used<br/>
  -h,--help                        print this message<br/>
@@ -18,7 +18,7 @@ usage: LoginGenerator.jar<br/>
                                   f.e. line "James Bond 007@mi6.uk" got "NAME SURNAME EMAIL".<br/>
                                   Default: name surname email<br/>
 <br/>
-#java -jar LoginGenerator.jar -i<br/>
+<b>java -jar LoginGenerator.jar -i</b><br/>
 [+] filename to process:data.txt<br/>
 [+] got file:data.txt. Is that right? ([Y]/n)<br/>
 [+] want me to print it? (y/[N]) y<br/>
