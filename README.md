@@ -2,6 +2,9 @@ LoginGenerator
 ==============
 
 Java app for generating usernames from gathered data. Currently it works (or should work) in interactive mode.
+I'll look into it soon to make it fully working, maybe add some features. It's using commons-cli 
+(http://commons.apache.org/proper/commons-cli/download_cli.cgi)<br/><br/>
+
 Below some usage example:<br/>
 <br/>
 <b>java -jar LoginGenerator.jar</b><br/>
