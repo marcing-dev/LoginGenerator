@@ -5,7 +5,6 @@ Java app for generating usernames from gathered data. Currently it works (or sho
 Below some usage example:<br/>
 <br/>
 <b>java -jar LoginGenerator.jar</b><br/>
-<pre>
 usage: LoginGenerator.jar<br/>
  -d,--dataline-contain <string>		only lines conatining that string will be used<br/>
  -h,--help                        print this message<br/>
@@ -18,7 +17,6 @@ usage: LoginGenerator.jar<br/>
                                   have data like: NAME, SURNAME, NICKNAME, EMAIL.<br/>
                                   f.e. line "James Bond 007@mi6.uk" got "NAME SURNAME EMAIL".<br/>
                                   Default: name surname email<br/>
-</pre>                                  
 <br/>
 <b>java -jar LoginGenerator.jar -i</b><br/>
 [+] filename to process:data.txt<br/>
